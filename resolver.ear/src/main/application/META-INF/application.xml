@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE application PUBLIC
+	"-//Sun Microsystems, Inc.//DTD J2EE Application 1.3//EN"
+	"http://java.sun.com/dtd/application_1_3.dtd">
+<application>
+    <display-name>resolver.ear</display-name>
+  
+    <module>
+        <web>
+            <web-uri>resolver.web-1.0.war</web-uri>
+            <context-root>/resolver</context-root>
+        </web>
+    </module>
+    <module>
+        <web>
+            <web-uri>resolver.sov-1.0.war</web-uri>
+            <context-root>/driver.sov</context-root>
+        </web>
+    </module>
+    <module>
+        <web>
+            <web-uri>resolver.dns-1.0.war</web-uri>
+            <context-root>/driver.dns</context-root>
+        </web>
+    </module>
+    <module>
+        <web>
+            <web-uri>resolver.ccp-1.0.war</web-uri>
+            <context-root>/driver.ccp</context-root>
+        </web>
+    </module>
+    <module>
+        <web>
+            <web-uri>resolver.btcr-1.0.war</web-uri>
+            <context-root>/driver.btcr</context-root>
+        </web>
+    </module>
+</application>
