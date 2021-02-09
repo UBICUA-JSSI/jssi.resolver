@@ -1,1 +1,1 @@
-# resolver.web
+# resolver
