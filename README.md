@@ -1,13 +1,12 @@
 # JSSI Resolver
+Java web application of [Universal DID Resolver](https://github.com/decentralized-identity/universal-resolver)
 
-## DID Resolver
-
-**Prerequisites**:
+## Prerequisites
 -	[Open JDK 15+](https://openjdk.java.net/)
 -	[Apache Netbeans 12+](https://netbeans.apache.org/)
 -	[Wildfly 21+](https://www.wildfly.org/)
 
-**Configuration**:
+## Configuration
 The application directory must be configured in the resolver.web file placed in <project>/resolver/resolver.web/src/main/webapp/WEB-INF/web.xml.
 
 in the context-param property:
@@ -42,7 +41,7 @@ wallet.resolver.key=resolver_wallet_key
  ```
 By default, the Resolver DID has the assigned value of V4SGRU86Z58d6TV7PBUe6f. It means that the Resolver Wallet contains the necessary cryptographic material to sign their requests to the Ubicua DLT. Before testing, it is necessary to check that the Wallet has been created and the Resolver DID has been registered. This operation is described in the jssi.wallet module.
 
-**Logging**:
+## Logging
 
  To enable the logging service, open the Widfly configuration file, i.e. directory/standalone/configuration/standalone-full.xml, and modify the profile/subsystem xmlns="urn:jboss:domain:logging:8.0" property as follows:
  
@@ -52,7 +51,7 @@ By default, the Resolver DID has the assigned value of V4SGRU86Z58d6TV7PBUe6f. I
  </logger>
  ```
  
-**Execution**:
+## Execution
  
 It is required to compile, package and deploy the resolver.ear application on the Wildfly server. To test the application, open a browser with the link:
 http://localhost:8080/resolver/1.0/identifiers/did:sov:ubicua:V4SGRU86Z58d6TV7PBUe6f
