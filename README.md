@@ -8,9 +8,9 @@ JSSI Resolver is aimed at resoving decentralized identifiers. To cover different
 - [Open JDK 15+](https://openjdk.java.net/)
 - [Apache Netbeans 12+](https://netbeans.apache.org/)
 - [Wildfly 21+](https://www.wildfly.org/)
-- [Hyperledger.lib]()
 
 ## Dependencies
+- [Hyperledger.lib](https://github.com/hyperledger/indy-sdk)
 
 ## Configuration
 The application directory must be configured in the resolver.web file that can be found in: 
