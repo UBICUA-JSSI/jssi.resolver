@@ -219,17 +219,6 @@ public class SovConfig implements Serializable{
         return wallet;
     }
     
-    
-//    Ubicua Did: KHegADqTR3HZFJUS2nHDzD, Verkey: Ay6DzEVG1jnE6JeuZdVfKjuHNV2e9xQaTpHBq4NuyxQF
-//    Ubicua Did: 8EbSkWapRpCAoGepayMY7y, Verkey: FpRDNBLn27TcFBQEePw1MyPHzDh94B2mjWZKXTLmuNTg
-//    Ubicua Did: K5hJL2yaa8YgQJAuGWeo5G
-//    Ubicua Did: 89GCf9Yw1dPTN4qEcw7ZuC
-//    Ubicua Did: LNCy5FLY31d7j3Uy5ftXSC
-//    Ubicua Did: WR4unGPDF1CJnpRuFWUKAh, Verkey: H2s9wyR6p5JNJMUozYHJJYcH7F4wV7j7Y4KXscaGFZFs
-//    Ubicua did: Rx8H1TmV3C9QaGqCfZEJax
-    
-//    Resolver Did: V4SGRU86Z58d6TV7PBUe6f
-//    Resolver Did: SN9Cg4M9ydzzxzHxrQBisn
     public String getResolverDid(){
         return "V4SGRU86Z58d6TV7PBUe6f";
     }
