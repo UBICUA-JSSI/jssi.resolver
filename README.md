@@ -35,7 +35,7 @@ The config.json file contains the driver configurations that will be included in
 As an example, the driver.properties fle contains the Ubicua test parameters:
  ```
 // Array of genesis
-resolver.config=<install_dir>/resolver/resolver.assets/ubicua.genesis
+resolver.config=ubicua,2,<install_dir>/resolver/resolver.assets/ubicua.genesis
 
 // Libindy path
 resolver.native=<install_dir>/hyperledger.native
