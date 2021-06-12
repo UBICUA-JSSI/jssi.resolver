@@ -48,7 +48,7 @@ For testing purposes, the Resolver DID has the assigned value of V4SGRU86Z58d6TV
 
 ## Logging
 
-To enable the logging service, open the Widfly configuration file, i.e. <install_dir>/standalone/configuration/standalone-full.xml, and modify the profile/subsystem xmlns="urn:jboss:domain:logging:8.0" property as follows:
+To enable the logging service, open the Widfly configuration file, i.e. <wildfly_install_dir>/standalone/configuration/standalone-full.xml, and modify the profile/subsystem xmlns="urn:jboss:domain:logging:8.0" property as follows:
  
  ```
 <logger category="jssi">
