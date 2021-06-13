@@ -220,6 +220,6 @@ public class SovConfig implements Serializable{
     }
     
     public String getResolverDid(){
-        return "V4SGRU86Z58d6TV7PBUe6f";
+        return config.getString("resolver.did");
     }
 }
