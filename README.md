@@ -1,4 +1,4 @@
-# JSSI Resolver Server
+# JSSI Resolution Server
 Java web application forked from [DIF Universal Resolver](https://github.com/decentralized-identity/universal-resolver)
 
 ## Description
