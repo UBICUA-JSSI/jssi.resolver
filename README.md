@@ -4,15 +4,16 @@ Java web application forked from [DIF Universal Resolver](https://github.com/dec
 ## Description
 JSSI Resolver is aimed at resoving decentralized identifiers. To cover different storage systems, the driver-based architecure is used. The default functionality is the [DID to DID document resolution](https://w3c-ccg.github.io/did-resolution/) provided by [Hyperledger Indy](https://github.com/hyperledger/indy-sdk).
 
-## Prerequisites
+## Quick start
+### Prerequisites
 - [Open JDK 15+](https://openjdk.java.net/)
 - [Apache Netbeans 12+](https://netbeans.apache.org/)
 - [Wildfly 21+](https://www.wildfly.org/)
 
-## Dependencies
+### Dependencies
 - [Hyperledger.lib](https://github.com/hyperledger/indy-sdk)
 
-## Configuration
+### Configuration
 The application directory must be configured in the resolver.web file that can be found in: 
 <install_dir>/resolver/resolver.web/src/main/webapp/WEB-INF/web.xml. Modify the context-param property to adjust it to your install_dir:
 
@@ -49,7 +50,7 @@ resolver.did=V4SGRU86Z58d6TV7PBUe6f
  ```
 JSSI Resolver must have a DID and a wallet that provides the necessary cryptographic material to sign its requests to the [Hyperledger Indy DLT](https://github.com/hyperledger/indy-sdk). Before testing, check if the Resolver wallet has been created and if the Resolver DID has been duly registered.
 
-## Logging
+### Logging
 
 To enable the logging service, open the Widfly configuration file, i.e. <wildfly_install_dir>/standalone/configuration/standalone-full.xml, and modify the profile/subsystem xmlns="urn:jboss:domain:logging:8.0" property as follows:
  
@@ -59,7 +60,7 @@ To enable the logging service, open the Widfly configuration file, i.e. <wildfly
  </logger>
  ```
  
-## Execution
+### Testing
  
 It is required to compile, package and deploy the resolver.ear application on the Wildfly server. To test the application, open your browser in:
 http://localhost:8080/resolver/1.0/identifiers/did:sov:ubicua:V4SGRU86Z58d6TV7PBUe6f
