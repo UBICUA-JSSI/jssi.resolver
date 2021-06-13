@@ -2,7 +2,7 @@
 Java web application forked from [DIF Universal Resolver](https://github.com/decentralized-identity/universal-resolver)
 
 ## Description
-JSSI Resolver is aimed at resoving decentralized identifiers. To cover different storage systems, the driver-based architecure is used. The default functionality is the [DID to DID document resolution](https://w3c-ccg.github.io/did-resolution/) provided by [Hyperledger Indy](https://github.com/hyperledger/indy-sdk).
+JSSI Resolution Server is aimed at resolving decentralized identifiers. The driver-based architecure is used to support different storage systems. The default driver.sov functionality is related to the [DID resolution](https://w3c-ccg.github.io/did-resolution/) using [Hyperledger Indy DLT](https://github.com/hyperledger/indy-sdk).
 
 ## Quick start
 ### Prerequisites
@@ -24,7 +24,7 @@ The application directory must be configured in the resolver.web file that can b
 </context-param>
 ```
 
-The config.json file contains the driver configurations that will be included in the deployable resolver.ear archive. The driver configuration file is specified in the web.xml file:
+The config.json file contains the driver configurations that will be included in the deployable resolver.ear archive. The driver.sov configuration file is specified in the web.xml file:
 
  ```
  <context-param>
@@ -48,7 +48,7 @@ wallet.resolver.key=resolver_wallet_key
 // Resolver did
 resolver.did=V4SGRU86Z58d6TV7PBUe6f
  ```
-JSSI Resolver must have a DID and a wallet that provides the necessary cryptographic material to sign its requests to the [Hyperledger Indy DLT](https://github.com/hyperledger/indy-sdk). Before testing, check if the Resolver wallet has been created and if the Resolver DID has been duly registered.
+JSSI Resolution Server must possess a DID and a wallet with necessary cryptographic material in order to sign requests to the [Hyperledger Indy DLT](https://github.com/hyperledger/indy-sdk). Before testing, check if the Resolver wallet has been created and the Resolver DID has been duly registered.
 
 ### Logging
 
