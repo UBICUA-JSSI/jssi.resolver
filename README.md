@@ -47,7 +47,7 @@ wallet.resolver.key=resolver_wallet_key
 // Resolver did
 resolver.did=V4SGRU86Z58d6TV7PBUe6f
  ```
-For testing purposes, the Resolver DID has the assigned value of V4SGRU86Z58d6TV7PBUe6f. It means that the Resolver wallet contains the necessary cryptographic material to sign their requests to DLT. Before testing, it is necessary to check if the wallet has been created and if the Resolver DID has been registered.
+JSSI Resolver must have a DID and a wallet that provides the necessary cryptographic material to sign its requests to the [Hyperledger Indy DLT](https://github.com/hyperledger/indy-sdk). Before testing, check if the Resolver wallet has been created and if the Resolver DID has been duly registered.
 
 ## Logging
 
